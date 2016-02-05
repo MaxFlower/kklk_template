@@ -381,11 +381,11 @@ input[type="button"]:focus {
 }
 
 header {
-  border-bottom: 1px solid rgba(148, 183, 79, 0.1);
   display: table;
   margin-bottom: 1.5em;
   padding-bottom: 1em;
-  width: 100%;
+  width: 500px;
+  margin: 0 auto;
 }
 
 header .main-logo,
@@ -414,6 +414,25 @@ header .main-label {
 header .main-label p {
   line-height: 14px;
   margin: 0;
+}
+
+nav {
+  background: #94b74f;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  z-index: 9999;
+  list-style: none;
+  height: 40px;
+}
+
+nav li {
+  display: inline-block;
+  min-height: 100%;
+}
+
+nav li.active {
+  background: #62751d;
 }
 
 html {
