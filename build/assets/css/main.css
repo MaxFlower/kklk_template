@@ -452,6 +452,14 @@ nav li.active {
   padding-right: 20px;
 }
 
+.content .left #catsCarousel {
+  width: 680px;
+}
+
+.content .left #catsCarousel a.carousel-control {
+  color: #111;
+}
+
 .content .left article {
   padding: 25px;
   background-color: #ddd;

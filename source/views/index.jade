@@ -4,7 +4,8 @@ head
   title ККЛК/Калининград
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1")
-  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")  
+  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
+  link(rel="stylesheet", href="vendors/bootstrap/dist/css/bootstrap.min.css")  
   link(rel="stylesheet", href="assets/css/main.css")
 body
 .wrapper
@@ -24,11 +25,20 @@ body
 
   .content
     section(class="left")
-      .sliderwrapper
-        ul(class="bxslider")
-          li: img(scr="http://placehold.it/700x200", title="Snow Cat")
-          li: img(scr="http://placehold.it/700x200", title="Wild Cat")
-          li: img(scr="http://placehold.it/700x200", title="Cute Cat")
+      #catsCarousel.carousel.slide(data-ride="carousel")
+        ol(class="carousel-indicators")
+          li(data-target="#catsCarousel", data-slide-to="0", class="active")
+          li(data-target="#catsCarousel", data-slide-to="1")
+          li(data-target="#catsCarousel", data-slide-to="2")
+        .carousel-inner(role="listbox")
+          .item.active
+            img(scr="assets/img/slide1.jpg", title="Snow Cat")
+          .item
+            img(scr="assets/img/slide2.jpg", title="Wild Cat")
+          .item
+            img(scr="assets/img/slide3.jpg", title="Cute Cat")
+        a(class="carousel-control left", href="#catsCarousel", data-slide="prev") &lsaquo;
+        a(class="carousel-control right", href="#catsCarousel", data-slide="next") &rsaquo;
 
       article(class="about")
         p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
@@ -37,8 +47,7 @@ body
           .calendar-label
             .label-image
               img(src="assets/img/icon_calender-02.png")
-            .label-text
-              Календарь событий
+            .label-text: span Календарь событий
           .events-calendar
         .eventslist
           .event
@@ -59,8 +68,7 @@ body
       .ad-label
         .label-image
           img(src="assets/img/icon_advertisment-02.png")
-        .label-text
-          Объявления
+        .label-text: span Объявления
       .ad
         h4 Little kitty
         p Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
@@ -75,4 +83,7 @@ body
     
 
   script(src="./vendors/jquery/dist/jquery.min.js")
+  script(src="./vendors/bootstrap/dist/js/bootstrap.min.js")
   script(src="./assets/js/app.js")
+
+  
