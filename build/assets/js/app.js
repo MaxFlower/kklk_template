@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
-  // Get started!
+    $('.bxslider').bxSlider({
+	  mode: 'fade',
+	  captions: true
+	});
 
 });

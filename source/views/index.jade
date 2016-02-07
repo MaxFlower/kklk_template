@@ -4,7 +4,7 @@ head
   title ККЛК/Калининград
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1")
-  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
+  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")  
   link(rel="stylesheet", href="assets/css/main.css")
 body
 .wrapper
@@ -24,8 +24,51 @@ body
 
   .content
     section(class="left")
+      .sliderwrapper
+        ul(class="bxslider")
+          li: img(scr="http://placehold.it/700x200", title="Snow Cat")
+          li: img(scr="http://placehold.it/700x200", title="Wild Cat")
+          li: img(scr="http://placehold.it/700x200", title="Cute Cat")
+
+      article(class="about")
+        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+      .calendar
+        .calendar-ui
+          .calendar-label
+            .label-image
+              img(src="assets/img/icon_calender-02.png")
+            .label-text
+              Календарь событий
+          .events-calendar
+        .eventslist
+          .event
+            hr
+            p(class="eventdate") 05.02.2016, пятница 2016
+            p(class="eventname") Международная выставка кошек
+            p(class="eventinfo") ДК Рыбаков, 18.00
+          .event
+            hr
+            p(class="eventdate") 05.02.2016, пятница 2016
+            p(class="eventname") Международная выставка кошек
+            p(class="eventinfo") ДК Рыбаков, 18.00  
+          a(href="#") Смотреть все
 
     section(class="right")
+      .banner1
+        img(src="http://placehold.it/200x200")
+      .ad-label
+        .label-image
+          img(src="assets/img/icon_advertisment-02.png")
+        .label-text
+          Объявления
+      .ad
+        h4 Little kitty
+        p Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+      .banner2
+        img(src="http://placehold.it/200x90")
+      .ad
+        h4 Little kitty 
+        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
 
   footer
     p Калининградский клуб любителей кошек (ККЛК) &copy; 2016   тел.: 8-911-123-34-45

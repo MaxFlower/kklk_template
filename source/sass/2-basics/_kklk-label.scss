@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/// Provides an easy way to include a clearfix for containing floats.
+///
+///
+/// @example scss - Usage
+///   .element {
+///     @include kklk-label;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     
+///   }
+
+@mixin kklk-label {
+  display: table;
+
+  img, 
+  p {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  img {
+    padding-right: 10px;
+  }
+}
