@@ -3,31 +3,30 @@
   background-color: $white
   margin-bottom: 20px
   padding: 20px
-  clearfix()
+  @include outer-container  
 
-  .left
-    width: 700px
-    display: inline-block
+  .left    
     padding-right: 20px
+    @include span-columns(8)
 
-    #catsCarousel
-      width: 680px
-
+    #catsCarousel      
+      height: 300px
       a.carousel-control
         color: $black
-        
+
 
     article
+      display: block
       padding: 25px
       background-color: $silver
       margin-bottom: 20px
 
     .calendar
       width: 100%
+      @include outer-container
 
       .calendar-ui
-        width: 49%
-        display: inline-block
+        @include span-columns(6)
       
         .calendar-label
           display:table
@@ -45,8 +44,7 @@
         .events-calendar
 
       .eventslist
-        width: 49%
-        display: inline-block
+        @include span-columns(6)
 
         a
           text-decoration: underline
@@ -54,8 +52,7 @@
           font-weight: 700    
 
   .right
-    width: 200px
-    display: inline-block
+    @include span-columns(4)
     text-align: left
 
     .ad-label

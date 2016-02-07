@@ -444,16 +444,31 @@ nav li.active {
   background-color: #fff;
   margin-bottom: 20px;
   padding: 20px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .content .left {
-  width: 700px;
-  display: inline-block;
   padding-right: 20px;
+  float: left;
+  display: block;
+  margin-right: 2.358%;
+  width: 65.881%;
+}
+
+.content .left:last-child {
+  margin-right: 0;
 }
 
 .content .left #catsCarousel {
-  width: 680px;
+  height: 300px;
 }
 
 .content .left #catsCarousel a.carousel-control {
@@ -461,6 +476,7 @@ nav li.active {
 }
 
 .content .left article {
+  display: block;
   padding: 25px;
   background-color: #ddd;
   margin-bottom: 20px;
@@ -468,11 +484,26 @@ nav li.active {
 
 .content .left .calendar {
   width: 100%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .left .calendar::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .content .left .calendar .calendar-ui {
-  width: 49%;
-  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.358%;
+  width: 48.821%;
+}
+
+.content .left .calendar .calendar-ui:last-child {
+  margin-right: 0;
 }
 
 .content .left .calendar .calendar-ui .calendar-label .label-image {
@@ -492,8 +523,14 @@ nav li.active {
 }
 
 .content .left .calendar .eventslist {
-  width: 49%;
-  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.358%;
+  width: 48.821%;
+}
+
+.content .left .calendar .eventslist:last-child {
+  margin-right: 0;
 }
 
 .content .left .calendar .eventslist a {
@@ -503,9 +540,15 @@ nav li.active {
 }
 
 .content .right {
-  width: 200px;
-  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.358%;
+  width: 31.762%;
   text-align: left;
+}
+
+.content .right:last-child {
+  margin-right: 0;
 }
 
 .content .right .ad-label .label-image {
