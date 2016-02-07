@@ -5,7 +5,8 @@ head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
-  link(rel="stylesheet", href="vendors/bootstrap/dist/css/bootstrap.min.css")  
+  link(rel="stylesheet", href="vendors/bootstrap/dist/css/bootstrap.min.css")
+  link(rel="stylesheet", href="vendors/jquery-ui/themes/base/jquery-ui.min.css")  
   link(rel="stylesheet", href="assets/css/main.css")
 body
 .wrapper
@@ -49,6 +50,7 @@ body
               img(src="assets/img/icon_calender-02.png")
             .label-text: span Календарь событий
           .events-calendar
+            #datepicker
         .eventslist
           .event
             hr
@@ -83,6 +85,7 @@ body
     
 
   script(src="./vendors/jquery/dist/jquery.min.js")
+  script(src="./vendors/jquery-ui/ui/minified/datepicker.min.js")
   script(src="./vendors/bootstrap/dist/js/bootstrap.min.js")
   script(src="./assets/js/app.js")
 

@@ -4,4 +4,6 @@ $( document ).ready(function() {
 	  interval: 2000
 	});
 
+	$( "#datepicker" ).datepicker();
+
 });
