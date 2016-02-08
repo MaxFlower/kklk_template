@@ -1,16 +1,12 @@
 {
-  "name": "dev-tips-starter-kit",
+  "name": "kklk",
   "version": "1.0.0",
   "authors": [
-    "Maikel Rivero Dorta <mriverodorta@gmail.com>"
+    "Max Tsvetkov"
   ],
-  "description": "Simple structure for a simple start to a simple site.",
+  "description": "kklk template",
   "main": "build/index.html",
-  "keywords": [
-    "boilerplate",
-    "seed",
-    "starter-kit",
-    "devtips",
+  "keywords": [    
     "sass",
     "jade",
     "gulp"
@@ -25,6 +21,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "bootstrap": "~3.3.6"
   }
 }

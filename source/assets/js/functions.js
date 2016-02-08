@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
-  // Get started!
+    $('.carousel').carousel({
+	  interval: 10000
+	});
+
+	$( "#datepicker" ).datepicker();
 
 });
