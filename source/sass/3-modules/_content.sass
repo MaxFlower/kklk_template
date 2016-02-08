@@ -10,10 +10,14 @@
     @include span-columns(8)
 
     #catsCarousel      
-      height: 300px
+      .carousel-inner
+        .item
+          height: 300px !important          
+          img            
+            width: 100%
+            height: 300px            
       a.carousel-control
         color: $black
-
 
     article
       display: block

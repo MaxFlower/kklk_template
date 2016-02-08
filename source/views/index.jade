@@ -21,8 +21,8 @@ body
     li: a Объявления
     li: a События
     li: a О нас
-    li: a Вход
-    li: a Регистрация
+    li(class="login"): a Вход
+    li(class="signup"): a Регистрация
 
   .content
     section(class="left")
@@ -33,11 +33,11 @@ body
           li(data-target="#catsCarousel", data-slide-to="2")
         .carousel-inner(role="listbox")
           .item.active
-            img(scr="assets/img/slide1.jpg", title="Snow Cat")
+            img(scr="./assets/img/slide1.jpg", title="Snow Cat")
           .item
-            img(scr="assets/img/slide2.jpg", title="Wild Cat")
+            img(scr="./assets/img/slide2.jpg", title="Wild Cat")
           .item
-            img(scr="assets/img/slide3.jpg", title="Cute Cat")
+            img(scr="./assets/img/slide3.jpg", title="Cute Cat")
         a(class="carousel-control left", href="#catsCarousel", data-slide="prev") &lsaquo;
         a(class="carousel-control right", href="#catsCarousel", data-slide="next") &rsaquo;
 
