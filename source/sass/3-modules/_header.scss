@@ -3,9 +3,9 @@ header {
   $base-spacing: 1.5em !default;  
   $dark-gray: #333 !default;
   $base-font-color: $maingreencolor !default;
-  $comment-gutter: 1.4em;
+  $comment-gutter: 0.6em;
   $comment-image-padding: 0.7em;
-  $comment-image-width: 4em;
+  $comment-image-width: 6em;
   $comment-color: $base-font-color;
    
   $comment-image-vert-alignment: middle;
@@ -13,7 +13,7 @@ header {
   display: table;
   margin-bottom: $base-spacing;
   padding-bottom: 25px;
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
 
   .main-logo,

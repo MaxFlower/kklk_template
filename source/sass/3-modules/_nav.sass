@@ -1,19 +1,24 @@
 nav
   background: $maingreencolor
-  display: block
-  overflow: hidden
+  display: block  
   width: 100%
   z-index: 9999
   list-style: none
   height: 40px
   padding: 0 30px 0 160px
   font-weight: 700
+  position: relative
+  z-index: 1
+  
 
   li
     display: inline-block
     min-height: 100%
     padding: 0 15px
-    
+    overflow: hidden
+    position: relative
+    z-index: 1
+
     a
       line-height: 40px
 
@@ -46,3 +51,19 @@ nav
       &:hover,
       &:focus        
         color: $white
+
+  .ribbon-left, .ribbon-right
+    z-index: 0
+    position: absolute
+    top: 20px
+
+    img
+      height: 40px
+      widht: auto
+
+  .ribbon-left
+    left: -60px
+
+  .ribbon-right
+    @include transform(rotate(180deg))
+    right: -60px

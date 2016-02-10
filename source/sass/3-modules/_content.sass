@@ -3,7 +3,10 @@
   background-color: $white
   margin-bottom: 20px
   padding: 20px
-  @include outer-container  
+  @include outer-container
+  max-width: 960px
+  position: relative
+  z-index: 100  
 
   .left    
     padding-right: 20px
@@ -20,10 +23,15 @@
         color: $black
 
     article
-      display: block
+      display: table
       padding: 25px
       background-color: $silver
       margin-bottom: 20px
+
+      img, p
+        display: table-cell
+        vertical-align: middle
+      
 
     .calendar
       width: 100%
@@ -46,7 +54,7 @@
             vertical-align: middle
             color: $activegreencolor
             font-size: 16px
-            weight: 700
+            font-weight: 700
           
         .events-calendar
 
@@ -76,5 +84,5 @@
         vertical-align: middle
         color: $activegreencolor
         font-size: 16px
-        weight: 700
+        font-weight: 700
               

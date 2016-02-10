@@ -247,6 +247,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #4d4d4d;
+  padding: 35px 0;
 }
 
 ::-moz-selection {
@@ -280,7 +281,9 @@ a {
 }
 
 a:hover, a:focus {
-  color: #cccccc;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .gigantic, .huge, .large, .bigger, .big,
@@ -383,8 +386,8 @@ input[type="button"]:focus {
 header {
   display: table;
   margin-bottom: 1.5em;
-  padding-bottom: 1em;
-  width: 500px;
+  padding-bottom: 25px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -395,7 +398,7 @@ header .main-label {
 }
 
 header .main-logo {
-  padding-right: 1.4em;
+  padding-right: 0.6em;
 }
 
 header .main-logo > img {
@@ -404,14 +407,17 @@ header .main-logo > img {
   height: auto;
   max-width: none;
   padding: 0.7em;
-  width: 4em;
+  width: 6em;
 }
 
 header .main-label {
   width: 100%;
 }
 
-header .main-label p {
+header .main-label h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #736357;
   line-height: 14px;
   margin: 0;
 }
@@ -419,18 +425,23 @@ header .main-label p {
 nav {
   background: #94b74f;
   display: block;
-  overflow: hidden;
   width: 100%;
   z-index: 9999;
   list-style: none;
   height: 40px;
-  padding: 0 30px 0 130px;
+  padding: 0 30px 0 160px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 
 nav li {
   display: inline-block;
   min-height: 100%;
   padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 nav li a {
@@ -438,23 +449,58 @@ nav li a {
 }
 
 nav li.active {
-  background: #62751d;
+  background-color: #62751d;
 }
 
 nav li.login {
-  margin-left: 140px;
+  margin-left: 180px;
 }
 
 nav li.login a {
+  font-size: 13px;
+  font-weight: 700;
   border-radius: 8px;
-  background: #fff;
+  background-color: #fff;
   padding: 5px 18px;
-  color: #62751d;
+  color: #50600f;
   height: 30px;
 }
 
+nav li.login a:hover, nav li.login a:focus {
+  color: #fff;
+  background-color: #62751d;
+}
+
 nav li.signup a {
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
   color: #62751d;
+}
+
+nav li.signup a:hover, nav li.signup a:focus {
+  color: #fff;
+}
+
+nav .ribbon-left, nav .ribbon-right {
+  z-index: 0;
+  position: absolute;
+  top: 20px;
+}
+
+nav .ribbon-left img, nav .ribbon-right img {
+  height: 40px;
+  widht: auto;
+}
+
+nav .ribbon-left {
+  left: -60px;
+}
+
+nav .ribbon-right {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: -60px;
 }
 
 .content {
@@ -465,6 +511,9 @@ nav li.signup a {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  max-width: 960px;
+  position: relative;
+  z-index: 100;
 }
 
 .content::after {
@@ -478,7 +527,7 @@ nav li.signup a {
   float: left;
   display: block;
   margin-right: 2.358%;
-  width: 65.881%;
+  width: 74.411%;
 }
 
 .content .left:last-child {
@@ -499,10 +548,15 @@ nav li.signup a {
 }
 
 .content .left article {
-  display: block;
+  display: table;
   padding: 25px;
   background-color: #ddd;
   margin-bottom: 20px;
+}
+
+.content .left article img, .content .left article p {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .content .left .calendar {
@@ -543,6 +597,9 @@ nav li.signup a {
 .content .left .calendar .calendar-ui .calendar-label .label-text {
   display: table-cell;
   vertical-align: middle;
+  color: #62751d;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .content .left .calendar .eventslist {
@@ -566,7 +623,7 @@ nav li.signup a {
   float: left;
   display: block;
   margin-right: 2.358%;
-  width: 31.762%;
+  width: 23.232%;
   text-align: left;
 }
 
@@ -588,6 +645,9 @@ nav li.signup a {
 .content .right .ad-label .label-text {
   display: table-cell;
   vertical-align: middle;
+  color: #62751d;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 html {

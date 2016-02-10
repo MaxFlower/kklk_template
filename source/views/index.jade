@@ -12,13 +12,10 @@ body
 .wrapper
   header
     .main-logo
-      img(src="assets/img/icon_about_us-01.png")
+      img(src="assets/img/logo_head.png")
     .main-label
-<<<<<<< HEAD
-      p Калининградский Клуб Любителей Кошек (ККЛК)
-=======
       h1 Калининградский Клуб Любителей Кошек (ККЛК)
->>>>>>> 999b2be961287707e89797596e3251000588cf32
+
 
   nav
     li(class='active'): a Главная
@@ -27,6 +24,8 @@ body
     li: a О нас
     li(class="login"): a Вход
     li(class="signup"): a Регистрация
+    .ribbon-left: img(src="assets/img/ribbon.png")
+    .ribbon-right: img(src="assets/img/ribbon.png")
 
   .content
     section(class="left")
@@ -37,22 +36,14 @@ body
           li(data-target="#catsCarousel", data-slide-to="2")
         .carousel-inner(role="listbox")
           .item.active
-<<<<<<< HEAD
-            img(class="img-responsive", scr="http://rupix.org/images/53938717171206987136.jpg", title="Snow Cat")
+            img(src="assets/img/icon_about_us-01.png", title="Wild Cat")
           .item
-            img(class="img-responsive", scr="http://www.ssec.wisc.edu/data/us_comp/image7.jpg", title="Wild Cat")
-          
-=======
-            img(scr="./assets/img/slide1.jpg", title="Snow Cat")
-          .item
-            img(scr="./assets/img/slide2.jpg", title="Wild Cat")
-          .item
-            img(scr="./assets/img/slide3.jpg", title="Cute Cat")
->>>>>>> 999b2be961287707e89797596e3251000588cf32
+            img(class="img-responsive", scr="assets/img/slide1.jpg", title="Wild Cat")
         a(class="carousel-control left", href="#catsCarousel", data-slide="prev") &lsaquo;
         a(class="carousel-control right", href="#catsCarousel", data-slide="next") &rsaquo;
 
       article(class="about")
+        img(src="assets/img/icon_about_us-01.png")
         p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
       .calendar
         .calendar-ui
@@ -64,12 +55,12 @@ body
             #datepicker
         .eventslist
           .event
-            hr
+            hr            
             p(class="eventdate") 05.02.2016, пятница 2016
             p(class="eventname") Международная выставка кошек
             p(class="eventinfo") ДК Рыбаков, 18.00
           .event
-            hr
+            hr           
             p(class="eventdate") 05.02.2016, пятница 2016
             p(class="eventname") Международная выставка кошек
             p(class="eventinfo") ДК Рыбаков, 18.00  
