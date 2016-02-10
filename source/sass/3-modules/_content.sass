@@ -38,10 +38,11 @@
       @include outer-container
 
       .calendar-ui
-        @include span-columns(6)
+        @include span-columns(5)
       
         .calendar-label
           display:table
+          margin-bottom: 20px
           .label-image
             display: table-cell
             vertical-align: middle
@@ -57,18 +58,51 @@
             font-weight: 700
           
         .events-calendar
+          
 
       .eventslist
-        @include span-columns(6)
+        @include span-columns(7)
+
+        hr
+          border: none
+          height: 1px
+          width: 60%
+          color: $activegreencolor
+          background-color: $activegreencolor
+          margin-bottom: 15px
+        
+        p
+          margin-bottom: 15px
+
+        .eventdate
+          color: $activegreencolor
+
+        .eventname
+          color: $black
+          font-size: 20px
+          font-weight: 700
+
+        .eventinfo
+          color: $gray
 
         a
           text-decoration: underline
           color: $black
-          font-weight: 700    
+          font-weight: 700
+
 
   .right
     @include span-columns(3)
     text-align: left
+    
+    .ad
+      img
+        float: left
+        margin: 7px 7px 7px 0
+
+    .ad
+      p
+        margin: 7px 0
 
     .ad-label
       display:table

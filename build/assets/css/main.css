@@ -576,11 +576,15 @@ nav .ribbon-right {
   float: left;
   display: block;
   margin-right: 2.358%;
-  width: 48.821%;
+  width: 40.291%;
 }
 
 .content .left .calendar .calendar-ui:last-child {
   margin-right: 0;
+}
+
+.content .left .calendar .calendar-ui .calendar-label {
+  margin-bottom: 20px;
 }
 
 .content .left .calendar .calendar-ui .calendar-label .label-image {
@@ -606,11 +610,38 @@ nav .ribbon-right {
   float: left;
   display: block;
   margin-right: 2.358%;
-  width: 48.821%;
+  width: 57.351%;
 }
 
 .content .left .calendar .eventslist:last-child {
   margin-right: 0;
+}
+
+.content .left .calendar .eventslist hr {
+  border: none;
+  height: 1px;
+  width: 60%;
+  color: #62751d;
+  background-color: #62751d;
+  margin-bottom: 15px;
+}
+
+.content .left .calendar .eventslist p {
+  margin-bottom: 15px;
+}
+
+.content .left .calendar .eventslist .eventdate {
+  color: #62751d;
+}
+
+.content .left .calendar .eventslist .eventname {
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content .left .calendar .eventslist .eventinfo {
+  color: #aaa;
 }
 
 .content .left .calendar .eventslist a {
@@ -629,6 +660,15 @@ nav .ribbon-right {
 
 .content .right:last-child {
   margin-right: 0;
+}
+
+.content .right .ad img {
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+
+.content .right .ad p {
+  margin: 7px 0;
 }
 
 .content .right .ad-label .label-image {
