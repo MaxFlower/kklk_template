@@ -1,0 +1,30 @@
+.events-calendar
+  .ui-widget-content
+    border: none
+  .ui-widget
+    font-family: 'Roboto', sans-serif
+
+  .ui-datepicker table
+    width: 90%
+    margin: 0 auto
+
+    td a
+      text-align: center
+      border: 1px solid $white
+      border-radius: 50%
+      background-color: $white
+
+      &:hover,
+      &:focus
+        color: $white        
+        border: 1px solid $activegreencolor
+        background-color: $activegreencolor
+
+    td a.ui-state-active, td a.ui-state-highlight
+      color: $white        
+      border: 1px solid $activegreencolor
+      background-color: $activegreencolor
+
+    td a.ui-state-highlight
+      color: $black
+      background-color: $white
