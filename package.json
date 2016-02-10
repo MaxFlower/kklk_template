@@ -1,21 +1,17 @@
 {
-  "name": "dev-tips-starter-kit",
+  "name": "kklk",
   "version": "1.0.0",
-  "description": "Simple structure for a simple start to a simple site.",
+  "description": "kklk template.",
   "main": "build/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "boilerplate",
-    "seed",
-    "starter-kit",
-    "devtips",
+  "keywords": [    
     "sass",
     "jade",
     "gulp"
   ],
-  "author": "Maikel Rivero Dorta <mriverodorta@gmail.com>",
+  "author": "Author: Max Tsvetkov>",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.11",

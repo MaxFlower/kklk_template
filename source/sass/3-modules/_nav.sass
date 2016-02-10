@@ -6,7 +6,8 @@ nav
   z-index: 9999
   list-style: none
   height: 40px
-  padding: 0 30px 0 130px
+  padding: 0 30px 0 160px
+  font-weight: 700
 
   li
     display: inline-block
@@ -17,17 +18,31 @@ nav
       line-height: 40px
 
   li.active
-    background: $activegreencolor
+    background-color: $activegreencolor
 
   li.login
-    margin-left: 140px
+    margin-left: 180px
     a
+      font-size: 13px
+      font-weight: 700
       border-radius: 8px
-      background: $white
+      background-color: $white
       padding: 5px 18px
-      color: $activegreencolor
-      height: 30px      
+      color: #50600f
+      height: 30px
+
+      &:hover,
+      &:focus        
+        color: $white
+        background-color: $activegreencolor      
 
   li.signup
     a
+      font-size: 13px
+      font-weight: 700
+      text-decoration: underline
       color: $activegreencolor
+
+      &:hover,
+      &:focus        
+        color: $white
