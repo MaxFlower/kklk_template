@@ -534,6 +534,11 @@ nav .ribbon-right {
   margin-right: 0;
 }
 
+.content .left #catsCarousel .carousel-indicators li.active {
+  background-color: #94b74f;
+  border-color: #94b74f;
+}
+
 .content .left #catsCarousel .carousel-inner .item {
   height: 300px !important;
 }
@@ -544,7 +549,15 @@ nav .ribbon-right {
 }
 
 .content .left #catsCarousel a.carousel-control {
-  color: #111;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  top: 130px;
+  background-image: none;
 }
 
 .content .left article {

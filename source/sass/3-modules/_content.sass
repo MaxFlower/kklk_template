@@ -12,7 +12,11 @@
     padding-right: 20px
     @include span-columns(9)
 
-    #catsCarousel      
+    #catsCarousel
+      .carousel-indicators
+        li.active
+          background-color: $maingreencolor
+          border-color: $maingreencolor          
       .carousel-inner
         .item
           height: 300px !important          
@@ -20,7 +24,15 @@
             width: 100%
             height: 300px            
       a.carousel-control
-        color: $black
+        width: 60px
+        height: 60px
+        color: $white
+        text-align: center        
+        padding: 0
+        margin: 0
+        font-size: 40px
+        top: 130px
+        background-image: none
 
     article
       display: table
@@ -55,9 +67,8 @@
             vertical-align: middle
             color: $activegreencolor
             font-size: 16px
-            font-weight: 700
-          
-        .events-calendar
+            font-weight: 700  
+        
           
 
       .eventslist
