@@ -436,11 +436,13 @@ nav {
 }
 
 nav li {
+  text-transform: uppercase;
   display: inline-block;
   min-height: 100%;
   padding: 0 15px;
   overflow: hidden;
   position: relative;
+  color: #fffffe;
   z-index: 1;
 }
 
@@ -453,13 +455,14 @@ nav li.active {
 }
 
 nav li.login {
-  margin-left: 190px;
+  margin-left: 170px;
+  padding: 0;
 }
 
 nav li.login a {
   font-size: 13px;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 12px;
   background-color: #fff;
   padding: 5px 18px;
   color: #50600f;
@@ -469,6 +472,10 @@ nav li.login a {
 nav li.login a:hover, nav li.login a:focus {
   color: #fff;
   background-color: #62751d;
+}
+
+nav li.signup {
+  padding: 0 0 0 10px;
 }
 
 nav li.signup a {
@@ -514,6 +521,7 @@ nav .ribbon-right {
   max-width: 960px;
   position: relative;
   z-index: 100;
+  box-shadow: 0px 0px 20px 0px rgba(138, 104, 14, 0.15);
 }
 
 .content::after {
@@ -567,14 +575,20 @@ nav .ribbon-right {
   margin-bottom: 20px;
 }
 
+.content .left article p img {
+  width: 82px;
+  padding-right: 25px;
+}
+
 .content .left article p {
   display: table-cell;
   vertical-align: middle;
-}
-
-.content .left article p img {
-  width: 70px;
-  padding-right: 15px;
+  font-family: Roboto;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
 }
 
 .content .left .calendar {
@@ -602,6 +616,7 @@ nav .ribbon-right {
 }
 
 .content .left .calendar .calendar-ui .calendar-label {
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -645,27 +660,33 @@ nav .ribbon-right {
 }
 
 .content .left .calendar .eventslist p {
-  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 10px;
 }
 
 .content .left .calendar .eventslist .eventdate {
+  font-style: italic;
   color: #62751d;
 }
 
 .content .left .calendar .eventslist .eventname {
   color: #111;
-  font-size: 20px;
-  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .content .left .calendar .eventslist .eventinfo {
-  color: #aaa;
+  color: #4d4d4d;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
 .content .left .calendar .eventslist a {
+  margin-top: 35px;
   text-decoration: underline;
-  color: #111;
+  color: #333333;
   font-weight: 700;
+  line-height: 20px;
 }
 
 .content .right {
@@ -680,19 +701,39 @@ nav .ribbon-right {
   margin-right: 0;
 }
 
+.content .right .banner {
+  margin-bottom: 25px;
+}
+
+.content .right .ad {
+  margin-bottom: 25px;
+}
+
+.content .right .ad h5 {
+  font-family: Roboto;
+  color: #4d4d4d;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
 .content .right .ad img {
   float: left;
-  margin: 7px 7px 7px 0;
+  margin: 7px 9px 3px 0;
 }
 
 .content .right .ad p {
+  color: #111;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
   margin: 7px 0;
 }
 
 .content .right .ad-label .label-image {
   display: table-cell;
   vertical-align: middle;
-  padding-right: 10px;
 }
 
 .content .right .ad-label .label-image img {
@@ -703,9 +744,19 @@ nav .ribbon-right {
 .content .right .ad-label .label-text {
   display: table-cell;
   vertical-align: middle;
+  text-transform: uppercase;
   color: #62751d;
   font-size: 16px;
   font-weight: 700;
+}
+
+footer p {
+  font-family: Roboto;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
 }
 
 .events-calendar .ui-widget-content {
@@ -714,6 +765,44 @@ nav .ribbon-right {
 
 .events-calendar .ui-widget {
   font-family: 'Roboto', sans-serif;
+}
+
+.events-calendar .ui-datepicker .ui-datapicker-header {
+  background-color: #e6e6e6;
+  width: 290px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.events-calendar .ui-datepicker a.ui-corner-all {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #999999;
+  background-image: none;
+  margin: 3px;
+}
+
+.events-calendar .ui-datepicker-prev span {
+  background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
+  background-position: -4px -3px !important;
+}
+
+.events-calendar .ui-datepicker-next span {
+  background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+  background-position: -4px -3px !important;
+}
+
+.events-calendar .ui-datepicker .ui-datepicker-title span {
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.events-calendar .ui-datepicker .ui-datepicker-title span.ui-datepicker-year {
+  display: none;
 }
 
 .events-calendar .ui-datepicker table {
@@ -730,14 +819,14 @@ nav .ribbon-right {
 
 .events-calendar .ui-datepicker table td a:hover, .events-calendar .ui-datepicker table td a:focus {
   color: #fff;
-  border: 1px solid #62751d;
-  background-color: #62751d;
+  border: 1px solid #94b74f;
+  background-color: #94b74f;
 }
 
 .events-calendar .ui-datepicker table td a.ui-state-active, .events-calendar .ui-datepicker table td a.ui-state-highlight {
   color: #fff;
-  border: 1px solid #62751d;
-  background-color: #62751d;
+  border: 1px solid #94b74f;
+  background-color: #94b74f;
 }
 
 .events-calendar .ui-datepicker table td a.ui-state-highlight {

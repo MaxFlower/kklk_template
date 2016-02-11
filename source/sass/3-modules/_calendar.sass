@@ -4,6 +4,37 @@
   .ui-widget
     font-family: 'Roboto', sans-serif
 
+  .ui-datepicker .ui-datapicker-header
+    background-color: #e6e6e6
+    width: 290px
+    height: 30px
+    vertical-align: middle
+
+  .ui-datepicker a.ui-corner-all
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background-color: #999999
+    background-image: none
+    margin: 3px   
+    
+  .ui-datepicker-prev span
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important
+    background-position: -4px -3px !important
+
+  .ui-datepicker-next span 
+    background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+    background-position: -4px -3px !important      
+
+  .ui-datepicker .ui-datepicker-title span
+    text-transform: uppercase
+    color: #4d4d4d
+    font-size: 17px
+    font-weight: 700
+    line-height: 20px
+  .ui-datepicker .ui-datepicker-title span.ui-datepicker-year
+    display: none
+
   .ui-datepicker table
     width: 90%
     margin: 0 auto
@@ -17,13 +48,13 @@
       &:hover,
       &:focus
         color: $white        
-        border: 1px solid $activegreencolor
-        background-color: $activegreencolor
+        border: 1px solid $maingreencolor
+        background-color: $maingreencolor
 
     td a.ui-state-active, td a.ui-state-highlight
       color: $white        
-      border: 1px solid $activegreencolor
-      background-color: $activegreencolor
+      border: 1px solid $maingreencolor
+      background-color: $maingreencolor
 
     td a.ui-state-highlight
       color: $black

@@ -6,7 +6,8 @@
   @include outer-container
   max-width: 960px
   position: relative
-  z-index: 100  
+  z-index: 100
+  box-shadow: 0px 0px 20px 0px rgba(138, 104, 14, 0.15)  
 
   .left    
     padding-right: 20px
@@ -40,13 +41,19 @@
       background-color: $silver
       margin-bottom: 20px
 
+      p img
+        width: 82px
+        padding-right: 25px
+
       p
         display: table-cell
         vertical-align: middle
-
-      p img
-        width: 70px
-        padding-right: 15px
+        font-family: Roboto;
+        color:  #000000
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+        text-align: left     
       
 
     .calendar
@@ -57,6 +64,7 @@
         @include span-columns(5)
       
         .calendar-label
+          text-transform: uppercase
           display:table
           margin-bottom: 20px
           .label-image
@@ -87,50 +95,69 @@
           margin-bottom: 15px
         
         p
-          margin-bottom: 15px
+          font-weight: 700
+          line-height: 19px
+          margin-bottom: 10px
 
-        .eventdate
+        .eventdate          
+          font-style: italic          
           color: $activegreencolor
 
         .eventname
           color: $black
-          font-size: 20px
-          font-weight: 700
+          text-transform: uppercase       
 
-        .eventinfo
-          color: $gray
+        .eventinfo          
+          color: #4d4d4d
+          font-weight: 400
+          margin-bottom: 40px
 
         a
+          margin-top: 35px
           text-decoration: underline
-          color: $black
+          color: #333333
           font-weight: 700
+          line-height: 20px
 
 
   .right
     @include span-columns(3)
     text-align: left
-    
+    .banner
+      margin-bottom: 25px
     .ad
+      margin-bottom: 25px
+      h5
+        font-family: Roboto
+        color: #4d4d4d
+        font-size: 17px
+        font-weight: 700
+        line-height: 20px
+        text-align: left
       img
         float: left
-        margin: 7px 7px 7px 0
+        margin: 7px 9px 3px 0
 
     .ad
       p
+        color: $black
+        font-size: 12px
+        font-weight: 300
+        line-height: 17px
         margin: 7px 0
 
     .ad-label
       display:table
       .label-image
         display: table-cell
-        vertical-align: middle
-        padding-right: 10px
+        vertical-align: middle        
         img
           width: 50px
           height: auto
       .label-text
         display: table-cell
         vertical-align: middle
+        text-transform: uppercase
         color: $activegreencolor
         font-size: 16px
         font-weight: 700
