@@ -104,8 +104,13 @@
           color: $activegreencolor
 
         .eventname
+          display: block
+          text-decoration: none
           color: $black
-          text-transform: uppercase       
+          text-transform: uppercase
+          margin: 15px 0
+          &:hover
+            text-decoration: underline       
 
         .eventinfo          
           color: #4d4d4d
@@ -127,7 +132,8 @@
       margin-bottom: 25px
     .ad
       margin-bottom: 25px
-      h5
+      a
+        display: block
         font-family: Roboto
         color: #4d4d4d
         font-size: 17px

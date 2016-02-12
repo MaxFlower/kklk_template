@@ -383,25 +383,25 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-header {
+header a {
   display: table;
   margin-bottom: 1.5em;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 
-header .main-logo,
-header .main-label {
+header a .main-logo,
+header a .main-label {
   display: table-cell;
   vertical-align: middle;
 }
 
-header .main-logo {
+header a .main-logo {
   padding-right: 0.6em;
 }
 
-header .main-logo > img {
+header a .main-logo > img {
   border-radius: 3px;
   display: block;
   height: auto;
@@ -410,16 +410,20 @@ header .main-logo > img {
   width: 6em;
 }
 
-header .main-label {
+header a .main-label {
   width: 100%;
 }
 
-header .main-label h1 {
+header a .main-label h1 {
   font-size: 20px;
   font-weight: 700;
   color: #736357;
   line-height: 14px;
   margin: 0;
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 nav {
@@ -671,8 +675,15 @@ nav .ribbon-right {
 }
 
 .content .left .calendar .eventslist .eventname {
+  display: block;
+  text-decoration: none;
   color: #111;
   text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.content .left .calendar .eventslist .eventname:hover {
+  text-decoration: underline;
 }
 
 .content .left .calendar .eventslist .eventinfo {
@@ -709,7 +720,8 @@ nav .ribbon-right {
   margin-bottom: 25px;
 }
 
-.content .right .ad h5 {
+.content .right .ad a {
+  display: block;
   font-family: Roboto;
   color: #4d4d4d;
   font-size: 17px;
@@ -784,13 +796,13 @@ footer p {
 }
 
 .events-calendar .ui-datepicker-prev span {
-  background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
-  background-position: -4px -3px !important;
+  background-image: url("../../vendors/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.png") !important;
+  background-position: -96px 0 !important;
 }
 
 .events-calendar .ui-datepicker-next span {
-  background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
-  background-position: -4px -3px !important;
+  background-image: url("../../vendors/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.png") !important;
+  background-position: -32px 0 !important;
 }
 
 .events-calendar .ui-datepicker .ui-datepicker-title span {

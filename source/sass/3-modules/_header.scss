@@ -1,4 +1,4 @@
-header {  
+header a {  
   $base-border-radius: 3px !default;
   $base-spacing: 1.5em !default;  
   $dark-gray: #333 !default;
@@ -12,9 +12,9 @@ header {
 
   display: table;
   margin-bottom: $base-spacing;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 
   .main-logo,
   .main-label {
@@ -45,4 +45,7 @@ header {
       margin: 0;
     }
   }
+}
+header a:hover {
+  text-decoration: none
 }
