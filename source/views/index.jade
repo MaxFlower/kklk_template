@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-  title ККЛК/Калининград
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1")
-  link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
-  link(rel="stylesheet", href="vendors/bootstrap/dist/css/bootstrap.min.css")
-  link(rel="stylesheet", href="vendors/jquery-ui/themes/base/jquery-ui.min.css")  
-  link(rel="stylesheet", href="assets/css/main.css")
-body
-.wrapper
-  header
-    a(src="/") 
-      .main-logo
-        img(src="assets/img/logo_head.png")
-      .main-label
-        h1 Калининградский Клуб Любителей Кошек (ККЛК)
+  head
+    title ККЛК/Калининград
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
+    link(rel="stylesheet", href="vendors/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="vendors/jquery-ui/themes/base/jquery-ui.min.css")  
+    link(rel="stylesheet", href="assets/css/main.css")
+  body
+    .wrapper
+      header
+        a(src="/") 
+          .main-logo
+            img(src="assets/img/logo_head.png")
+          .main-label
+            h1 Калининградский Клуб Любителей Кошек (ККЛК)
 
 
-  nav
-    li(class='active'): a Главная
-    li: a Объявления
-    li: a События
-    li: a О нас
-    li(class="login"): a Вход
-    li(class="signup"): a Регистрация
-    .ribbon-left: img(src="assets/img/ribbon.png")
-    .ribbon-right: img(src="assets/img/ribbon.png")
+      nav
+        li(class='active'): a Главная
+        li: a Объявления
+        li: a События
+        li: a О нас
+        li(class="login"): a Вход
+        li(class="signup"): a Регистрация
+        .ribbon-left: img(src="assets/img/ribbon.png")
+        .ribbon-right: img(src="assets/img/ribbon.png")
 
-  .content
-    section(class="left")
-      #catsCarousel.carousel.slide(data-ride="carousel")
-        ol(class="carousel-indicators")
-          li(data-target="#catsCarousel", data-slide-to="0", class="active")
-          li(data-target="#catsCarousel", data-slide-to="1")
-          li(data-target="#catsCarousel", data-slide-to="2")
-        .carousel-inner(role="listbox")
-          .item.active
-            img(src="assets/img/slide1.jpg", title="Wild Cat")
-          .item
-            img(src="assets/img/slide2.jpg", title="Cute Cat")
-          .item
-            img(src="assets/img/slide3.jpg", title="Big Cat")
-        a(class="carousel-control left", href="#catsCarousel", data-slide="prev") &lsaquo;
-        a(class="carousel-control right", href="#catsCarousel", data-slide="next") &rsaquo;
+      .content
+        section(class="left")
+          #catsCarousel.carousel.slide(data-ride="carousel")
+            ol(class="carousel-indicators")
+              li(data-target="#catsCarousel", data-slide-to="0", class="active")
+              li(data-target="#catsCarousel", data-slide-to="1")
+              li(data-target="#catsCarousel", data-slide-to="2")
+            .carousel-inner(role="listbox")
+              .item.active
+                img(src="assets/img/slide1.jpg", title="Wild Cat")
+              .item
+                img(src="assets/img/slide2.jpg", title="Cute Cat")
+              .item
+                img(src="assets/img/slide3.jpg", title="Big Cat")
+            a(class="carousel-control left", href="#catsCarousel", data-slide="prev") &lsaquo;
+            a(class="carousel-control right", href="#catsCarousel", data-slide="next") &rsaquo;
 
-      article(class="about")
-        p: img(src="assets/img/icon_about_us-01.png")
-        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-      .calendar
-        .calendar-ui
-          .calendar-label
+          article(class="about")
+            p: img(src="assets/img/icon_about_us-01.png")
+            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+          .calendar
+            .calendar-ui
+              .calendar-label
+                .label-image
+                  img(src="assets/img/icon_calender-02.png")
+                .label-text: span Календарь событий
+              .events-calendar
+                #datepicker
+            .eventslist
+              .event
+                hr            
+                p(class="eventdate") 05.02.2016, пятница 2016
+                a(class="eventname") Международная выставка кошек
+                p(class="eventinfo") ДК Рыбаков, 18.00
+              .event
+                hr           
+                p(class="eventdate") 05.02.2016, пятница 2016
+                a(class="eventname") Международная выставка кошек
+                p(class="eventinfo") ДК Рыбаков, 18.00  
+              a(href="#") Смотреть все
+
+        section(class="right")
+          .banner
+            img(src="http://placehold.it/200x200")
+          .ad-label
             .label-image
-              img(src="assets/img/icon_calender-02.png")
-            .label-text: span Календарь событий
-          .events-calendar
-            #datepicker
-        .eventslist
-          .event
-            hr            
-            p(class="eventdate") 05.02.2016, пятница 2016
-            a(class="eventname") Международная выставка кошек
-            p(class="eventinfo") ДК Рыбаков, 18.00
-          .event
-            hr           
-            p(class="eventdate") 05.02.2016, пятница 2016
-            a(class="eventname") Международная выставка кошек
-            p(class="eventinfo") ДК Рыбаков, 18.00  
-          a(href="#") Смотреть все
+              img(src="assets/img/icon_advertisment-02.png")
+            .label-text: span Объявления
+          .ad
+            a Персидские котята в добрые руки
+            img(src="assets/img/thumbnail1.jpg", title="Персидские котята в добрые руки")
+            p Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker.
+          .banner
+            img(src="http://placehold.it/200x90")
+          .ad
+            a Персидские котята в добрые руки
+            img(src="assets/img/thumbnail2.jpg", title="Персидские котята в добрые руки") 
+            p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века спользуя Lorem Ipsum для распечатки образцов. 
 
-    section(class="right")
-      .banner
-        img(src="http://placehold.it/200x200")
-      .ad-label
-        .label-image
-          img(src="assets/img/icon_advertisment-02.png")
-        .label-text: span Объявления
-      .ad
-        a Персидские котята в добрые руки
-        img(src="assets/img/thumbnail1.jpg", title="Персидские котята в добрые руки")
-        p Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker.
-      .banner
-        img(src="http://placehold.it/200x90")
-      .ad
-        a Персидские котята в добрые руки
-        img(src="assets/img/thumbnail2.jpg", title="Персидские котята в добрые руки") 
-        p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века спользуя Lorem Ipsum для распечатки образцов. 
+    footer
+      p Калининградский клуб любителей кошек (ККЛК) &copy; 2016   тел.: 8-911-123-34-45
+      
 
-  footer
-    p Калининградский клуб любителей кошек (ККЛК) &copy; 2016   тел.: 8-911-123-34-45
-    
-
-  script(src="./vendors/jquery/dist/jquery.min.js")
-  script(src="./vendors/jquery-ui/ui/minified/datepicker.min.js")
-  script(src="./vendors/bootstrap/dist/js/bootstrap.min.js")
-  script(src="./assets/js/app.js")
+    script(src="./vendors/jquery/dist/jquery.min.js")
+    script(src="./vendors/jquery-ui/ui/minified/datepicker.min.js")
+    script(src="./vendors/bootstrap/dist/js/bootstrap.min.js")
+    script(src="./assets/js/app.js")
 
   
