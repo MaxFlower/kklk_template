@@ -852,10 +852,13 @@ footer p {
 }
 
 html {
+  width: 100%;
   height: 100%;
 }
 
 body {
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100%;
   background-color: #f5e9dd;
   font-family: 'Roboto', sans-serif;
